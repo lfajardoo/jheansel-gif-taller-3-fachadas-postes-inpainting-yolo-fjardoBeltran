@@ -82,7 +82,7 @@ python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 # .venv\Scripts\activate   # Windows
 
-pip install -r requeriments.txt
+pip install -r requirements.txt
 ```
 
 ---
@@ -153,7 +153,7 @@ python src/inferencia.py --modo completo
 
 2. **Instala las dependencias:**
    ```bash
-   pip install -r requeriments.txt
+   pip install -r requirements.txt
    ```
 
 3. **Inicia el servidor API:**
