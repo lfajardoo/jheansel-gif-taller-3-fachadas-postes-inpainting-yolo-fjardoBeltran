@@ -82,7 +82,7 @@ python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 # .venv\Scripts\activate   # Windows
 
-pip install -r requirements.txt
+pip install -r requeriments.txt
 ```
 
 ---
@@ -132,4 +132,54 @@ python src/inferencia.py --modo mascaras
 python src/inferencia.py --modo inpaint
 ```
 
-#### Pipeli
+#### Pipeline completo
+
+```bash
+python src/inferencia.py --modo completo
+```
+
+---
+
+## 🌐 Uso de la API (Eliminar postes de imágenes)
+
+### 🚀 Inicio rápido
+
+**Sigue estos 4 pasos para usar la API:**
+
+1. **Activa el entorno virtual:**
+   ```bash
+   .venv\Scripts\activate
+   ```
+
+2. **Instala las dependencias:**
+   ```bash
+   pip install -r requeriments.txt
+   ```
+
+3. **Inicia el servidor API:**
+   ```bash
+   uvicorn src.api:app --reload
+   ```
+
+4. **Abre la interfaz web:**
+   ```
+   http://127.0.0.1:8000/docs
+   ```
+
+✅ **¡Listo!** Ahora puedes subir imágenes y eliminar postes automáticamente.
+
+### 📋 Endpoints principales
+
+- **GET /** → Info de la API
+- **GET /health** → Verificar que funcione  
+- **POST /predict** → Detectar objetos en imagen
+- **POST /inpaint** → ✨ **Eliminar postes de imagen**
+
+### 💡 Ejemplo rápido
+```bash
+# Eliminar postes de una imagen
+curl -X POST "http://127.0.0.1:8000/inpaint" -F "file=@tu_imagen.jpg"
+```
+
+---
+
