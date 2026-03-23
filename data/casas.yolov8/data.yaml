@@ -1,0 +1,13 @@
+names:
+- casa
+- poste
+nc: 2
+roboflow:
+  license: Private
+  project: my-first-project-uaprr
+  url: https://app.roboflow.com/pepitos-workspace/my-first-project-uaprr/4
+  version: 4
+  workspace: pepitos-workspace
+test: /content/drive/MyDrive/Colab Notebooks/Aplicaciones ML/Taller2/dataset_roboflow_t3/casas.yolov8/test/images
+train: /content/drive/MyDrive/Colab Notebooks/Aplicaciones ML/Taller2/dataset_roboflow_t3/casas.yolov8/train/images
+val: /content/drive/MyDrive/Colab Notebooks/Aplicaciones ML/Taller2/dataset_roboflow_t3/casas.yolov8/valid/images
