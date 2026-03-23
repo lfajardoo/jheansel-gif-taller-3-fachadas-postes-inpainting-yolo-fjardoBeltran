@@ -6,10 +6,11 @@
 
 ## 🧠 Integrantes:
 
-JHEANSEL BELTRAN
-LEONARDO FAJARDO 
+- JHEANSEL BELTRAN
+- LEONARDO FAJARDO 
 
-Aplicaciones de aprendizaje de máquina 2026-1. UR.
+####     Aplicaciones de aprendizaje de máquina 2026-1. UR.
+
 
 ## 🚀 Descripción
 
